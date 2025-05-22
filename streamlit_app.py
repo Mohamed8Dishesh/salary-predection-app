@@ -178,7 +178,7 @@ if submit_button:
 # Add instructions
 st.markdown('<div class="section-title">How It Works</div>', unsafe_allow_html=True)
 st.markdown("""
-- **Age**: Enter your age (18-100).
+- **Ag**: Enter your age (18-100).
 - **Years of Experience**: Enter your years of work experience (0-50).
 - **Education Level**: Select your education level (0: High School, 1: Bachelor’s, 2: Master’s, 3: PhD).
 - **Senior Status**: Select whether you are a senior employee (Yes/No).
