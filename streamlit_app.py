@@ -10,11 +10,11 @@ st.set_page_config(page_title="Salary Prediction App", page_icon="💼", layout=
 
 # Check if all required files exist
 required_files = [
-    r"D:\SpaceCode_GraduationProject\best_model.pkl",
-    r"D:\SpaceCode_GraduationProject\scaler.pkl",
-    r"D:\SpaceCode_GraduationProject\gender_encoder.pkl",
-    r"D:\SpaceCode_GraduationProject\job_title_encoder.pkl",
-    r"D:\SpaceCode_GraduationProject\job_title_mapping.json",
+    r"best_model.pkl",
+    r"scaler.pkl",
+    r"gender_encoder.pkl",
+    r"job_title_encoder.pkl",
+    r"job_title_mapping.json",
     r"D:\SpaceCode_GraduationProject\X_train_LabelEncoded.csv"
 ]
 
