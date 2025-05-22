@@ -100,7 +100,7 @@ with st.form(key="prediction_form"):
     st.markdown('<div class="section-title">Job Details</div>', unsafe_allow_html=True)
     col3, col4 = st.columns(2)
     with col3:
-        education_level = st.selectbox("Education Level", options=[0, 1, 2, 3], format_func=lambda x: ["High School", "Bachelor’s", “Master’s", "PhD"][x])
+        education_level = st.selectbox("Education Level", options=[0, 1, 2, 3], format_func=lambda x: ["High School", "Bachelor’s", "Master’s", "PhD"][x])
         gender = st.selectbox("Gender", options=list(le_gender.classes_))
     with col4:
         senior = st.selectbox("Senior Status", options=[0, 1], format_func=lambda x: "No" if x == 0 else "Yes")
