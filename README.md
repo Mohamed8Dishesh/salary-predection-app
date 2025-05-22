@@ -1,6 +1,6 @@
-# Salary Predection App
+# Salary Prediction App
 
-This is a salary predection app
+Salary Prediction App
 
 ## Demo App
 
