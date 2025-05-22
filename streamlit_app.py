@@ -15,7 +15,7 @@ required_files = [
     r"gender_encoder.pkl",
     r"job_title_encoder.pkl",
     r"job_title_mapping.json",
-    r"D:\SpaceCode_GraduationProject\X_train_LabelEncoded.csv"
+    r"X_train_LabelEncoded.csv"
 ]
 
 for file in required_files:
@@ -24,17 +24,17 @@ for file in required_files:
         st.stop()
 
 # Load the model, scaler, and encoders
-model = joblib.load(r"D:\SpaceCode_GraduationProject\best_model.pkl")
-scaler = joblib.load(r"D:\SpaceCode_GraduationProject\scaler.pkl")
-le_gender = joblib.load(r"D:\SpaceCode_GraduationProject\gender_encoder.pkl")
-le_job_title = joblib.load(r"D:\SpaceCode_GraduationProject\job_title_encoder.pkl")
+model = joblib.load(r"best_model.pkl")
+scaler = joblib.load(r"scaler.pkl")
+le_gender = joblib.load(r"gender_encoder.pkl")
+le_job_title = joblib.load(r"job_title_encoder.pkl")
 
 # Load job title mapping
-with open(r"D:\SpaceCode_GraduationProject\job_title_mapping.json", 'r') as f:
+with open(r"job_title_mapping.json", 'r') as f:
     job_title_mapping = json.load(f)
 
 # Define the expected columns (based on X_train_LabelEncoded.csv)
-expected_columns = pd.read_csv(r"D:\SpaceCode_GraduationProject\X_train_LabelEncoded.csv").columns.tolist()
+expected_columns = pd.read_csv(r"X_train_LabelEncoded.csv").columns.tolist()
 
 # Streamlit UI
 st.title("💼 Salary Prediction App")
