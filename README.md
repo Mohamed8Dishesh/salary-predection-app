@@ -35,6 +35,6 @@ The best performing model (XGBoost) was deployed using the Streamlit library. Th
 
 ## Author
 
-Mohamed Dehish ([GitHub Profile](https://github.com/Mohamed8Dishesh))
+Mohamed Deshish ([GitHub Profile](https://github.com/Mohamed8Dishesh))
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/mohamed-deshish/).
