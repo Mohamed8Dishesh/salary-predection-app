@@ -17,10 +17,6 @@ Click the badge above to open the Salary Prediction App in your browser.
 
 The data cleaning phase involved handling missing values, identifying and addressing outliers, and ensuring data consistency. Exploratory Data Analysis (EDA) was performed to gain insights into the data distribution, relationships between features, and potential patterns relevant for salary prediction. This included visualizations and statistical summaries to understand the dataset characteristics.
 
-## Feature Engineering and Machine Learning Models
-
-Feature engineering techniques were applied to create informative features for the models. This included [mention specific techniques if you remember, e.g., encoding categorical variables, scaling numerical features, creating interaction terms].
-
 The following machine learning models were trained and evaluated:
 
 * **Linear Regression:** A basic linear model used as a baseline.
