@@ -50,12 +50,12 @@ st.markdown("""
 
 # Check if all required files exist
 required_files = [
-    "best_model.pkl",
-    "scaler.pkl",
-    "gender_encoder.pkl",
-    "job_title_encoder.pkl",
-    "job_title_mapping.json",
-    "X_train_LabelEncoded.csv"
+    "models/best_model.pkl",
+    "models/scaler.pkl",
+    "models/gender_encoder.pkl",
+    "models/job_title_encoder.pkl",
+    "config/job_title_mapping.json",
+    "data/X_train_LabelEncoded.csv"
 ]
 
 for file in required_files:
@@ -64,17 +64,17 @@ for file in required_files:
         st.stop()
 
 # Load the model, scaler, and encoders
-model = joblib.load("best_model.pkl")
-scaler = joblib.load("scaler.pkl")
-le_gender = joblib.load("gender_encoder.pkl")
-le_job_title = joblib.load("job_title_encoder.pkl")
+model = joblib.load("model/best_model.pkl")
+scaler = joblib.load("model/scaler.pkl")
+le_gender = joblib.load("model/gender_encoder.pkl")
+le_job_title = joblib.load("model/job_title_encoder.pkl")
 
 # Load job title mapping
-with open("job_title_mapping.json", 'r') as f:
+with open("config/job_title_mapping.json", 'r') as f:
     job_title_mapping = json.load(f)
 
 # Define the expected columns (based on X_train_LabelEncoded.csv)
-expected_columns = pd.read_csv("X_train_LabelEncoded.csv").columns.tolist()
+expected_columns = pd.read_csv("data/X_train_LabelEncoded.csv").columns.tolist()
 
 # Streamlit UI
 st.markdown('<div class="header">📈 Salary Prediction App</div>', unsafe_allow_html=True)
