@@ -64,10 +64,10 @@ for file in required_files:
         st.stop()
 
 # Load the model, scaler, and encoders
-model = joblib.load("model/best_model.pkl")
-scaler = joblib.load("model/scaler.pkl")
-le_gender = joblib.load("model/gender_encoder.pkl")
-le_job_title = joblib.load("model/job_title_encoder.pkl")
+model = joblib.load("models/best_model.pkl")
+scaler = joblib.load("models/scaler.pkl")
+le_gender = joblib.load("models/gender_encoder.pkl")
+le_job_title = joblib.load("models/job_title_encoder.pkl")
 
 # Load job title mapping
 with open("config/job_title_mapping.json", 'r') as f:
