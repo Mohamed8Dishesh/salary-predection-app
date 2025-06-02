@@ -6,7 +6,7 @@ Three machine learning models were trained and evaluated: Linear Regression, Ran
 
 The trained XGBoost model is deployed using Streamlit, providing an interactive web interface where users can input their data and receive a predicted salary.
 
-## Demo App
+## Smart salary app
 
 [![Salary Prediction App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://smartsalaryapp.streamlit.app/)
 
