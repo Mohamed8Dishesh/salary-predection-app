@@ -23,7 +23,7 @@ The following machine learning models were trained and evaluated:
 * **Random Forest:** An ensemble learning method based on decision trees.
 * **XGBoost (Extreme Gradient Boosting):** A powerful gradient boosting algorithm known for its high performance.
 
-Model performance was evaluated using appropriate metrics [mention the specific metric if you remember, e.g., R-squared, Mean Squared Error, Accuracy]. The **XGBoost model demonstrated the best performance with an accuracy of approximately 0.97**, outperforming Linear Regression and Random Forest. This trained XGBoost model (`best_model.pkl`) was then used for the Streamlit application.
+The **XGBoost model demonstrated the best performance with an accuracy of approximately 0.97**, outperforming Linear Regression and Random Forest. This trained XGBoost model (`best_model.pkl`) was then used for the Streamlit application.
 
 ## Deployment
 
